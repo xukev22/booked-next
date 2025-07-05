@@ -14,15 +14,7 @@ export const links: readonly LinkItem[] = [
     link: "/social",
   },
   {
-    name: "Chatbot",
-    link: "/chatbot",
-  },
-  {
     name: "Library",
     link: "/library",
-  },
-  {
-    name: "Dashboard",
-    link: "/dashboard",
   },
 ] as const;

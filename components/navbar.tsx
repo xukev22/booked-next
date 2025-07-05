@@ -17,7 +17,7 @@ export default function Navbar() {
     const activeItem = links.find((linkItem) => linkItem.link === pathname);
     if (activeItem) {
       setActiveLink(activeItem.name);
-    } else if (pathname.startsWith("/dashboard/books")) {
+    } else if (pathname.startsWith("/dashboard")) {
       setActiveLink("Dashboard");
     }
   }, [pathname]); // Runs whenever the pathname changes
@@ -140,10 +140,12 @@ export default function Navbar() {
         {/* Sign In */}
         {session ? (
           <div className="flex items-center space-x-4">
-            <span className="text-gray-700 font-medium">
-              Welcome back,{" "}
-              <span className="text-green-800">{session.user.name}</span>
-            </span>
+            <Link href="/dashboard">
+              <span className="text-gray-700 font-medium">
+                Welcome back,{" "}
+                <span className="text-green-800">{session.user.name}</span>
+              </span>
+            </Link>
             <Image
               src={session.user.image!}
               alt="My avatar"

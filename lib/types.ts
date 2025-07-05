@@ -10,3 +10,12 @@ export interface LinkItem {
 export interface LoadingProps {
   message?: string; // Optional message prop, defaulting to 'Loading...'
 }
+
+export type BookType = {
+  id: string;
+  userId: string;
+  bookTitle: string;
+  isbn: string;
+  thumbnail: string;
+  empty?: boolean;
+};
