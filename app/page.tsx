@@ -16,7 +16,12 @@ export default function Home() {
         empty={true}
       />
       <BookList books={[]}></BookList> */}
+      <Feature title="Recommended reads..." books={[]} />
       <Feature title="NY Times Best Sellers..." books={[]} />
+      <Feature title="Read something new..." books={[]} />
+      <Feature title="Books from real stories..." books={[]} />
+      <Feature title="Books for young adults..." books={[]} />
+      <Feature title="Start a new series..." books={[]} />
     </BaseContainer>
   );
 }

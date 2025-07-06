@@ -2,9 +2,5 @@ import { WithChildren } from "@/lib/types";
 import React from "react";
 
 export default function BaseContainer({ children }: WithChildren) {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-8">
-      {children}
-    </main>
-  );
+  return <main className="w-full min-h-screen p-12">{children}</main>;
 }

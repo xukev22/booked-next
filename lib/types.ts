@@ -19,3 +19,9 @@ export type BookType = {
   thumbnail: string;
   empty?: boolean;
 };
+
+export type BookGroupType = {
+  title: string;
+  likes: number;
+  books: BookType[];
+};
